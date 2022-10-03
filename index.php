@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ericson John | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="public/res/favicon.ico" type="image/x-icon">
+<script src="public/js/scripts.js"></script>
+<link rel="stylesheet" href="public/css/styles.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Montserrat", sans-serif;
+}
+body, html {
+  height: 100%;
+  color: #333333;
+  line-height: 1.8;
+  scroll-behavior: smooth !important;
+}
+
+/* PARALLAX EFFECT */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* FULL SCREEN BANNER */
+.bgimg-1 {
+  background-image: url('public/res/banner1.jpg');
+  height: 100%;
+}
+
+/* MY PROJECTS BANNER */
+.bgimg-2 {
+  background-image: url("public/res/banner2.jpg");
+  min-height: 400px;
+}
+
+/* CONTACT ME BANNER */
+.bgimg-3 {
+  background-image: url("public/res/banner2.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* DISABLE PARALLAX FOR MOBILE */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR (KEEP ON TOP) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-left" href="javascript:void(0);" 
+        onclick="toggleFunction()" title="Toggle Navigation Menu">
+    <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item"><img id="navLogo" src="public/res/favicon.png"></a>
+    <a id="topNav" href="#about" class="w3-bar-item w3-hide-small"><i class="fa fa-user"></i> About</a>
+    <a id="topNav" href="#myworks" class="w3-bar-item w3-hide-small"><i class="fa fa-th"></i> My Works</a>
+    <a id="topNav" href="#contact" class="w3-bar-item w3-hide-small"><i class="fa fa-envelope"></i> Contact Me</a>
+  </div>
+
+  <!-- NAVBAR FOR SMALL SCREEN -->
+  <div id="navMobile" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-black">
+    <a href="#home" class="w3-bar-item w3-button" onclick="toggleFunction()">Home</a>
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About</a>
+    <a href="#myworks" class="w3-bar-item w3-button" onclick="toggleFunction()">My Works</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact Me</a>
+  </div>
+</div>
+
+<!-- FULL SCREEN BANNER -->
+<div class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span id="frontMsg1" class="w3-xlarge">
+        <b>Got something in mind?</b>
+    </span>
+    <p id="frontMsg2" class="w3-center w3-text-dark-gray">
+        let's make it <a href="#about">happen</a>.
+    </p>
+  </div>
+</div>
+
+<!-- ABOUT CONTAINER -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>Hi! I'm Ericson John Plaza<br>a Freelanced Front-End Developer.</em></p>
+    <p>
+        I am an adaptive detail oriented innovative frontend developer that focuses on making thing simple yet 
+        interactive in terms of UI and UX.
+    </p>
+    <p>
+        Most of my works are in web applications and android, I specialize in using HTML5, CSS3, JavaScript, and PHP, 
+        for my web application projects and also utilize Android Studio for android projects.
+        Be sure to check <a href="#myworks">my works</a> down below!
+    </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Ericson John Plaza</b></p><br>
+      <img src="public/res/ericson.jpg" class="w3-round w3-image" alt="Photo of Me" width="200" height="200"
+        style="border: 2px solid #777777; border-radius: 100px;">
+    </div>
+
+    <!-- HIDDEN WHEN SCREEN IS SMALL -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>
+        Welcome to my website. Here you can check my latest projects as well as the past projects that I have
+        completed. Feel free to check them for your reference and be sure to send me an email if you are interested
+        with working with me for your new project. Hope to hear from you real soon!
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- MY PROJECTS BANNER -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide" style="text-shadow:1px 2px 0 #777">MY PROJECTS</span>
+  </div>
+</div>
+
+<!-- MY PROJECTS CONTAINER -->
+<div class="w3-content w3-container w3-padding-64" id="myworks">
+  <h3 class="w3-center">MY PROJECTS</h3>
+  <p class="w3-center"><em>Here are some of the latest projects that I have done.<br> Click on the images to see more details</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding w3-center">
+        <div class="w3-col m3">
+            <img src="public/res/project1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" 
+            alt="I worked as a Frontend app developer in this android project for San Roque Supermarket(SRS). I have made their point of sale(POS)
+            system more user-friendly and much easier to use and added responsiveness to the design to let thier employees be allowed to 
+            utilize the system more efficeintly.">
+        </div>
+    </div>
+    <p class="w3-center">Like what you are seeing? let me know by <a href="#contact">contacting me</a> and let's start doing business.</p>
+</div>
+
+<!-- MODAL-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- CONTACT ME BANNER -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide" style="text-shadow:1px 2px 0 #777">CONTACT ME</span>
+  </div>
+</div>
+
+<!-- CONTACT ME CONTAINER -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">HOW DO YOU FIND MY PORTFOLIO?</h3>
+  <p class="w3-center"><em>I'm excited to be working with you!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="public/res/favicon.png" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Caloocan City, PH<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +63 (919) 681 4041<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: ericsonjohnplaza@gmail.com<br>
+      </div>
+      <p> Feel free to send me an email if you have inquiries. </p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navMobile");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>

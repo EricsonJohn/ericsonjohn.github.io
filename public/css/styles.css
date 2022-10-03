@@ -1,0 +1,48 @@
+#navLogo {
+    height: 32px;
+    width: 32px;
+    transition: transform 0.35s;
+    transition-timing-function: ease-in;
+}
+
+#navLogo:hover {
+    transform: scale(1.2, 1.2);
+}
+
+#topNav {
+    border-radius: 0px 0px 16px 16px;
+    text-decoration: none;
+    transition: background-color 0.35s;
+    transition-timing-function: ease-in;
+}
+
+#topNav:hover {
+    background-color: #000000;
+    border-radius: 0px 0px 16px 16px;
+    color: #ffffff;
+}
+
+#frontMsg1 {
+    margin-bottom: 7px;
+    animation-name: fadeIn;
+    animation-duration: 4s;
+    transition: text-shadow, color 0.35s;
+    transition-timing-function: ease-in;
+}
+
+#frontMsg1:hover {
+    cursor: default;
+    color: #ffffff;
+    text-shadow: 0 0 25px #000000, 0 0 5px #000000;
+}
+
+#frontMsg2 {
+    margin-top: 0px;
+    animation-name: fadeIn;
+    animation-duration: 4s;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
