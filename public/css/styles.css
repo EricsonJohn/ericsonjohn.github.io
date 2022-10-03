@@ -26,8 +26,8 @@
     margin-bottom: 7px;
     animation-name: fadeIn;
     animation-duration: 4s;
-    transition: text-shadow, color 0.35s;
-    transition-timing-function: ease-in;
+    transition: text-shadow 0.5s, color 0.35s;
+    transition-timing-function: ease-in-out;
 }
 
 #frontMsg1:hover {
